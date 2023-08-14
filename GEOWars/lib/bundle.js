@@ -3749,10 +3749,10 @@ module.exports = Ship;
 const NORMAL_FRAME_TIME_DELTA = 1000 / 60;
 
 Ship.MOVES = {
-  s: [0, 1],
-  a: [-1, 0],
-  w: [0, -1],
-  d: [1, 0],
+  s: [0,1],
+  q: [-1,0],
+  z: [0,-1],
+  d: [1,0],
 }
 
 /***/ }),
@@ -4582,6 +4582,7 @@ class GameView {
 
 const KEYMAP = {
   87: "W",
+  81: "Q",
   82: "R",
   90: "Z",
   88: "X",
@@ -4595,8 +4596,8 @@ const KEYMAP = {
 
 GameView.MOVES = {
   s: [0,1],
-  a: [-1,0],
-  w: [0,-1],
+  q: [-1,0],
+  z: [0,-1],
   d: [1,0],
 }
 
